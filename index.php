@@ -3,7 +3,7 @@
 ini_set('error_reporting', E_ALL);
 ini_set('default_charset', 'UTF-8');
 
-$url = 'http://' . $_SERVER['HTTP_HOST'] . '/www/cursos/phpoo/poo-clientes';
+$url = 'http://' . $_SERVER['HTTP_HOST'] . '/www/cursos/poo-clientes';
 
 define('BASE_URL', $url);
 define('PUBLIC_HTML', __DIR__ . DIRECTORY_SEPARATOR);

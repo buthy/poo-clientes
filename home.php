@@ -42,37 +42,23 @@
                         </thead>
                         <tbody>
                             <?php
-                            $array = array(
-                                1 => array(
-                                    "id" => 1,
-                                    "login" => "marcus",
-                                    "nome" => "Marcus David",
-                                    "email" => "buthy88@gmail.com",
-                                    "cpf" => "066.166.899-13",
-                                    "sexo" => "M"
-                                ),
-                                2 => array(
-                                    "id" => 2,
-                                    "login" => "buthy",
-                                    "nome" => "Buthy",
-                                    "email" => "buthy88@gmail.com",
-                                    "cpf" => "066.166.899-13",
-                                    "sexo" => "M"
-                                ),
-                                3 => array(
-                                    "id" => 3,
-                                    "login" => "teste",
-                                    "nome" => "Teste",
-                                    "email" => "buthy88@gmail.com",
-                                    "cpf" => "066.166.899-13",
-                                    "sexo" => "M"
-                                )
-                            );
+                            $cliente1 = new \app\Cliente\Cliente(1, 'marcus', 'Marcus', 'buthy88@gmail.com', '066.166.899-13', 'M');
+                            $cliente2 = new \app\Cliente\Cliente(2, 'joao', 'João', 'joao@gmail.com', null, 'M');
+                            $cliente3 = new \app\Cliente\Cliente(3, 'maria', 'Maria', 'maria@gmail.com', null, 'F');
+                            $cliente4 = new \app\Cliente\Cliente(4, 'silvia', 'Silvia', 'silvia@gmail.com', null, 'F');
+                            $cliente5 = new \app\Cliente\Cliente(5, 'magnus', 'Magnus', 'magnus@gmail.com', null, 'M');
+                            $cliente6 = new \app\Cliente\Cliente(6, 'inez', 'Inez', 'inez@gmail.com', null, 'F');
+                            $cliente7 = new \app\Cliente\Cliente(7, 'gustavo', 'Gustavo', 'gustavo@gmail.com', null, 'M');
+                            $cliente8 = new \app\Cliente\Cliente(8, 'marcio', 'Marcio', 'marcio@gmail.com', null, 'M');
+                            $cliente9 = new \app\Cliente\Cliente(9, 'pedro', 'Pedro', 'pedro@gmail.com', null, 'M');
+                            $cliente10 = new \app\Cliente\Cliente(10, 'joana', 'Joana', 'joana@gmail.com', null, 'F');
 
-                            for ($i = 1; $i <= 3; $i++) {
-                                $clientes = new app\Cliente\Cliente($array[$i]["id"], $array[$i]["login"], $array[$i]["nome"], $array[$i]["email"], $array[$i]["cpf"], $array[$i]["sexo"]);
-                                echo "<tr><th>".$clientes->getId()."</th><th>".$clientes->getLogin()."</th><th>".$clientes->getNome()."</th><th><span class=\"btn btn-primary btn-xs\" onClick=\"javascript:abrirModal('".$clientes->getNome()."', 'Login: ".$clientes->getLogin()."<br>E-mail: ".$clientes->getEmail()."<br>CPF: ".$clientes->getCpf()."<br>Sexo: ".$clientes->getSexo()."');\">Ver informações</span></th></tr>";
+                            $clientes = array($cliente1, $cliente2, $cliente3, $cliente4, $cliente5, $cliente6, $cliente7, $cliente8, $cliente9, $cliente10);
+
+                            foreach ($clientes as $arr) {
+                                echo "<tr><th>".$arr->getId()."</th><th>".$arr->getLogin()."</th><th>".$arr->getNome()."</th><th><span class=\"btn btn-primary btn-xs\" onClick=\"javascript:abrirModal('".$arr->getNome()."', 'Login: ".$arr->getLogin()."<br>E-mail: ".$arr->getEmail()."<br>CPF: ".$arr->getCpf()."<br>Sexo: ".$arr->getSexo()."');\">Ver informações</span></th></tr>";
                             }
+
                             ?>
                         </tbody>
                     </table>
