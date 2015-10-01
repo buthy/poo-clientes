@@ -42,16 +42,16 @@
                         </thead>
                         <tbody>
                             <?php
-                            $cliente1 = new \app\Cliente\Cliente(1, 'marcus', 'Marcus', 'buthy88@gmail.com', '066.166.899-13', 'M');
-                            $cliente2 = new \app\Cliente\Cliente(2, 'joao', 'João', 'joao@gmail.com', null, 'M');
-                            $cliente3 = new \app\Cliente\Cliente(3, 'maria', 'Maria', 'maria@gmail.com', null, 'F');
-                            $cliente4 = new \app\Cliente\Cliente(4, 'silvia', 'Silvia', 'silvia@gmail.com', null, 'F');
-                            $cliente5 = new \app\Cliente\Cliente(5, 'magnus', 'Magnus', 'magnus@gmail.com', null, 'M');
-                            $cliente6 = new \app\Cliente\Cliente(6, 'inez', 'Inez', 'inez@gmail.com', null, 'F');
-                            $cliente7 = new \app\Cliente\Cliente(7, 'gustavo', 'Gustavo', 'gustavo@gmail.com', null, 'M');
-                            $cliente8 = new \app\Cliente\Cliente(8, 'marcio', 'Marcio', 'marcio@gmail.com', null, 'M');
-                            $cliente9 = new \app\Cliente\Cliente(9, 'pedro', 'Pedro', 'pedro@gmail.com', null, 'M');
-                            $cliente10 = new \app\Cliente\Cliente(10, 'joana', 'Joana', 'joana@gmail.com', null, 'F');
+                            $cliente1 = new \app\cliente\cliente(1, 'marcus', 'Marcus', 'buthy88@gmail.com', '066.166.899-13', 'M');
+                            $cliente2 = new \app\cliente\cliente(2, 'joao', 'João', 'joao@gmail.com', null, 'M');
+                            $cliente3 = new \app\cliente\cliente(3, 'maria', 'Maria', 'maria@gmail.com', null, 'F');
+                            $cliente4 = new \app\cliente\cliente(4, 'silvia', 'Silvia', 'silvia@gmail.com', null, 'F');
+                            $cliente5 = new \app\cliente\cliente(5, 'magnus', 'Magnus', 'magnus@gmail.com', null, 'M');
+                            $cliente6 = new \app\cliente\cliente(6, 'inez', 'Inez', 'inez@gmail.com', null, 'F');
+                            $cliente7 = new \app\cliente\cliente(7, 'gustavo', 'Gustavo', 'gustavo@gmail.com', null, 'M');
+                            $cliente8 = new \app\cliente\cliente(8, 'marcio', 'Marcio', 'marcio@gmail.com', null, 'M');
+                            $cliente9 = new \app\cliente\cliente(9, 'pedro', 'Pedro', 'pedro@gmail.com', null, 'M');
+                            $cliente10 = new \app\cliente\cliente(10, 'joana', 'Joana', 'joana@gmail.com', null, 'F');
 
                             $clientes = array($cliente1, $cliente2, $cliente3, $cliente4, $cliente5, $cliente6, $cliente7, $cliente8, $cliente9, $cliente10);
 
