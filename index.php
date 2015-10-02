@@ -3,6 +3,16 @@
 ini_set('error_reporting', E_ALL);
 ini_set('default_charset', 'UTF-8');
 
+function url(){
+    return sprintf(
+        "%s://%s%s",
+        isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https' : 'http',
+        $_SERVER['SERVER_NAME'],
+        $_SERVER['REQUEST_URI']
+    );
+}
+
+define('BASE_URL', url());
 define('PUBLIC_HTML', __DIR__ . DIRECTORY_SEPARATOR);
 define('SRC_DIR', __DIR__ . DIRECTORY_SEPARATOR . 'src' . DIRECTORY_SEPARATOR);
 define('VENDOR_NAME', 'app');
