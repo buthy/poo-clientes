@@ -1,6 +1,6 @@
 # My Default Folders
-.idea/
-.fixtures/
+.idea
+.fixtures
 
 # Windows image file caches
 Thumbs.db
