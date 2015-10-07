@@ -8,8 +8,8 @@
 
     <title>Clientes - Curso POO Code.Education</title>
 
-    <link href="<?php echo BASE_URL; ?>/css/bootstrap.css" rel="stylesheet">
-    <link href="<?php echo BASE_URL; ?>/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="//cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css">
 
 </head>
@@ -196,8 +196,8 @@
         </div>
     </div>
 
-    <script src="<?php echo BASE_URL; ?>/js/jquery-1.11.0.js"></script>
-    <script src="<?php echo BASE_URL; ?>/js/bootstrap.min.js"></script>
+    <script src="/js/jquery-1.11.0.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
     <script src="//cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
 
     <script>

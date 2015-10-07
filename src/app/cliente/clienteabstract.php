@@ -13,10 +13,7 @@ class clienteabstract implements cobrancainterface, grauimportanciainterface
     private $nome;
     private $endereco;
     private $email;
-    private $cpf;
-    private $cnpj;
     private $sexo;
-    private $razaoSocial;
     private $tipo;
     private $grauImportancia;
     private $enderecoCobranca;
@@ -76,28 +73,6 @@ class clienteabstract implements cobrancainterface, grauimportanciainterface
         return $this;
     }
 
-    public function getCpf()
-    {
-        return $this->cpf;
-    }
-
-    public function setCpf($cpf)
-    {
-        $this->cpf = $cpf;
-        return $this;
-    }
-
-    public function getCnpj()
-    {
-        return $this->cnpj;
-    }
-
-    public function setCnpj($cnpj)
-    {
-        $this->cnpj = $cnpj;
-        return $this;
-    }
-
     public function getSexo()
     {
         return $this->sexo;
@@ -107,17 +82,6 @@ class clienteabstract implements cobrancainterface, grauimportanciainterface
     public function setSexo($sexo)
     {
         $this->sexo = $sexo;
-        return $this;
-    }
-
-    public function getRazaoSocial()
-    {
-        return $this->razaoSocial;
-    }
-
-    public function setRazaoSocial($razaoSocial)
-    {
-        $this->razaoSocial = $razaoSocial;
         return $this;
     }
 
