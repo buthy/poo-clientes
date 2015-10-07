@@ -35,28 +35,139 @@
                         <thead>
                             <tr>
                                 <th># <i class="fa fa-sort"></i></th>
-                                <th>Nome</th>
                                 <th>Login</th>
+                                <th>Nome</th>
+                                <th>Tipo</th>
                                 <th>Ações</th>
                             </tr>
                         </thead>
                         <tbody>
                             <?php
-                            $cliente1 = new \app\cliente\cliente(1, 'marcus', 'Marcus', 'buthy88@gmail.com', '066.166.899-13', 'M');
-                            $cliente2 = new \app\cliente\cliente(2, 'joao', 'João', 'joao@gmail.com', null, 'M');
-                            $cliente3 = new \app\cliente\cliente(3, 'maria', 'Maria', 'maria@gmail.com', null, 'F');
-                            $cliente4 = new \app\cliente\cliente(4, 'silvia', 'Silvia', 'silvia@gmail.com', null, 'F');
-                            $cliente5 = new \app\cliente\cliente(5, 'magnus', 'Magnus', 'magnus@gmail.com', null, 'M');
-                            $cliente6 = new \app\cliente\cliente(6, 'inez', 'Inez', 'inez@gmail.com', null, 'F');
-                            $cliente7 = new \app\cliente\cliente(7, 'gustavo', 'Gustavo', 'gustavo@gmail.com', null, 'M');
-                            $cliente8 = new \app\cliente\cliente(8, 'marcio', 'Marcio', 'marcio@gmail.com', null, 'M');
-                            $cliente9 = new \app\cliente\cliente(9, 'pedro', 'Pedro', 'pedro@gmail.com', null, 'M');
-                            $cliente10 = new \app\cliente\cliente(10, 'joana', 'Joana', 'joana@gmail.com', null, 'F');
+                            $cliente1 = new \app\cliente\types\clientepf();
+                            $cliente1   ->setId(1)
+                                        ->setLogin('marcus')
+                                        ->setNome('Marcus David')
+                                        ->setEmail('buthy88@gmail.com')
+                                        ->setEndereco('Rua Alberto Dalcanalle, 163, Centro')
+                                        ->setCpf('066.166.899-13')
+                                        ->setTipo('F')
+                                        ->setGrauImportancia(4);
+                            $cliente2 = new \app\cliente\types\clientepf();
+                            $cliente2   ->setId(2)
+                                        ->setLogin('silvia')
+                                        ->setNome('Silvia Regina')
+                                        ->setEmail('silvia@gmail.com')
+                                        ->setEndereco('Rua Alberto Dalcanalle, 163, Centro')
+                                        ->setCpf('000.000.000-00')
+                                        ->setTipo('F')
+                                        ->setGrauImportancia(4);
+                            $cliente3 = new \app\cliente\types\clientepf();
+                            $cliente3   ->setId(3)
+                                        ->setLogin('magnus')
+                                        ->setNome('Magnus Artuso')
+                                        ->setEmail('magnus@gmail.com')
+                                        ->setEndereco('Rua Alberto Dalcanalle, 163, Centro')
+                                        ->setCpf('000.000.000-00')
+                                        ->setTipo('F')
+                                        ->setGrauImportancia(4);
+                            $cliente4 = new \app\cliente\types\clientepf();
+                            $cliente4   ->setId(4)
+                                        ->setLogin('inez')
+                                        ->setNome('Inez Artuso')
+                                        ->setEmail('inez@gmail.com')
+                                        ->setEndereco('Rua Alberto Dalcanalle, 163, Centro')
+                                        ->setCpf('000.000.000-00')
+                                        ->setTipo('F')
+                                        ->setGrauImportancia(5);
+                            $cliente5 = new \app\cliente\types\clientepf();
+                            $cliente5   ->setId(5)
+                                        ->setLogin('gevaldino')
+                                        ->setNome('Gevaldino Moraes')
+                                        ->setEmail('giba@gmail.com')
+                                        ->setEndereco('Rua Alberto Dalcanalle, 163, Centro')
+                                        ->setCpf('000.000.000-00')
+                                        ->setTipo('F')
+                                        ->setGrauImportancia(5);
+                            $cliente6 = new \app\cliente\types\clientepj();
+                            $cliente6   ->setId(6)
+                                        ->setLogin('fisk')
+                                        ->setNome('Fisk Fronteira')
+                                        ->setEmail('fisk@fisk.com.br')
+                                        ->setEndereco('Dionísio Cerqueira')
+                                        ->setCnpj('00.000.000/0000-00')
+                                        ->setTipo('J')
+                                        ->setRazaoSocial('Fisk Fronteira e Cia Ltda')
+                                        ->setEnderecoCobranca('Mesmo endereço')
+                                        ->setGrauImportancia(5);
+                            $cliente7 = new \app\cliente\types\clientepj();
+                            $cliente7   ->setId(7)
+                                        ->setLogin('mclee')
+                                        ->setNome('McLee Editora Gráfica')
+                                        ->setEmail('mclee@mclee.com.br')
+                                        ->setEndereco('São Miguel do Oeste')
+                                        ->setCnpj('00.000.000/0000-00')
+                                        ->setTipo('J')
+                                        ->setRazaoSocial('McLee Inc')
+                                        ->setEnderecoCobranca('Rua XV de Novembro')
+                                        ->setGrauImportancia(5);
+                            $cliente8 = new \app\cliente\types\clientepj();
+                            $cliente8   ->setId(8)
+                                        ->setLogin('voxsis')
+                                        ->setNome('Voxsis')
+                                        ->setEmail('voxsis@voxsis.com.br')
+                                        ->setEndereco('SMO/SC')
+                                        ->setCnpj('00.000.000/0000-00')
+                                        ->setTipo('J')
+                                        ->setRazaoSocial('Voxsis Inc')
+                                        ->setEnderecoCobranca('Mesmo endereço')
+                                        ->setGrauImportancia(3);
+                            $cliente9 = new \app\cliente\types\clientepj();
+                            $cliente9   ->setId(9)
+                                        ->setLogin('kepler')
+                                        ->setNome('Kepler Sistemas')
+                                        ->setEmail('kepler@kepler.inf.br')
+                                        ->setEndereco('São Miguel do Oeste')
+                                        ->setCnpj('00.000.000/0000-00')
+                                        ->setTipo('J')
+                                        ->setRazaoSocial('Kepler Co.')
+                                        ->setEnderecoCobranca('SMO')
+                                        ->setGrauImportancia(4);
+                            $cliente10 = new \app\cliente\types\clientepj();
+                            $cliente10  ->setId(10)
+                                        ->setLogin('kam')
+                                        ->setNome('KAM')
+                                        ->setEmail('kam@kam.inf.br')
+                                        ->setEndereco('Arapongas')
+                                        ->setCnpj('00.000.000/0000-00')
+                                        ->setTipo('J')
+                                        ->setRazaoSocial('KAM Co.')
+                                        ->setEnderecoCobranca('Arapongas, PR')
+                                        ->setGrauImportancia(5);
 
                             $clientes = array($cliente1, $cliente2, $cliente3, $cliente4, $cliente5, $cliente6, $cliente7, $cliente8, $cliente9, $cliente10);
 
                             foreach ($clientes as $arr) {
-                                echo "<tr><th>".$arr->getId()."</th><th>".$arr->getLogin()."</th><th>".$arr->getNome()."</th><th><span class=\"btn btn-primary btn-xs\" onClick=\"javascript:abrirModal('".$arr->getNome()."', 'Login: ".$arr->getLogin()."<br>E-mail: ".$arr->getEmail()."<br>CPF: ".$arr->getCpf()."<br>Sexo: ".$arr->getSexo()."');\">Ver informações</span></th></tr>";
+                                $str = "";
+                                $str .= "<tr>
+                                        <th>".$arr->getId()."</th>
+                                        <th>".$arr->getLogin()."</th>
+                                        <th>".$arr->getNome()."</th>
+                                        <th>".$arr->getTipo()."</th>
+                                        <th>
+                                            <span class=\"btn btn-primary btn-xs\" onClick=\"javascript:abrirModal(
+                                                '".$arr->getNome()."',
+                                                'Login: ".$arr->getLogin().
+                                                "<br>E-mail: ".$arr->getEmail().
+                                                "<br>Endereço: ".$arr->getEndereco().
+                                                "<br>Grau de importância: ".$arr->getGrauImportancia();
+                                                ($arr->getTipo() == 'F' ? $str .= "<br>CPF: ".$arr->getCpf() : $str .= "<br>CNPJ: ".$arr->getCnpj()."<br>Razão social: ".$arr->getRazaoSocial()."<br>Endereço de cobrança: ".$arr->getEnderecoCobranca() );
+                                $str .=         "');\">
+                                                Ver informações
+                                            </span>
+                                        </th>
+                                     </tr>";
+
+                                echo $str;
                             }
 
                             ?>
