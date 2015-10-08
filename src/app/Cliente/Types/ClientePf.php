@@ -7,7 +7,7 @@ use app\Cliente\ClienteAbstract;
 class ClientePf extends ClienteAbstract
 {
 
-    private $cpf;
+    protected $cpf;
 
     public function getCpf()
     {

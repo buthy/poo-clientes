@@ -6,5 +6,6 @@ interface clientepfinterface
 {
 
     public function getCpf();
+    public function setCpf($cpf);
 
 }

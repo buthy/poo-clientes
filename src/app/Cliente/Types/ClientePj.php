@@ -7,8 +7,8 @@ use app\Cliente\ClienteAbstract;
 class ClientePj extends ClienteAbstract
 {
 
-    private $cnpj;
-    private $razaoSocial;
+    protected $cnpj;
+    protected $razaoSocial;
 
     public function getCnpj()
     {

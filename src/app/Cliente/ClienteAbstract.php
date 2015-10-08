@@ -2,21 +2,21 @@
 
 namespace app\Cliente;
 
+use app\Cliente\Interfaces\ClienteInterface;
 use app\Cliente\Interfaces\EnderecoCobrancaInterface;
 use app\Cliente\Interfaces\GrauImportanciaInterface;
 
-class ClienteAbstract implements EnderecoCobrancaInterface, GrauImportanciaInterface
+class ClienteAbstract implements ClienteInterface, EnderecoCobrancaInterface, GrauImportanciaInterface
 {
 
-    private $id;
-    private $login;
-    private $nome;
-    private $endereco;
-    private $email;
-    private $sexo;
-    private $tipo;
-    private $grauImportancia;
-    private $enderecoCobranca;
+    protected $id;
+    protected $login;
+    protected $nome;
+    protected $endereco;
+    protected $email;
+    protected $tipo;
+    protected $grauImportancia;
+    protected $enderecoCobranca;
 
     public function getId()
     {
@@ -70,18 +70,6 @@ class ClienteAbstract implements EnderecoCobrancaInterface, GrauImportanciaInter
     public function setEmail($email)
     {
         $this->email = $email;
-        return $this;
-    }
-
-    public function getSexo()
-    {
-        return $this->sexo;
-        return $this;
-    }
-
-    public function setSexo($sexo)
-    {
-        $this->sexo = $sexo;
         return $this;
     }
 
