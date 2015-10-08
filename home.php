@@ -43,7 +43,7 @@
                         </thead>
                         <tbody>
                             <?php
-                            $cliente1 = new \app\cliente\types\clientepf();
+                            $cliente1 = new \app\Cliente\Types\ClientePf();
                             $cliente1   ->setId(1)
                                         ->setLogin('marcus')
                                         ->setNome('Marcus David')
@@ -52,7 +52,7 @@
                                         ->setCpf('066.166.899-13')
                                         ->setTipo('F')
                                         ->setGrauImportancia(4);
-                            $cliente2 = new \app\cliente\types\clientepf();
+                            $cliente2 = new \app\Cliente\Types\ClientePf();
                             $cliente2   ->setId(2)
                                         ->setLogin('silvia')
                                         ->setNome('Silvia Regina')
@@ -61,7 +61,7 @@
                                         ->setCpf('000.000.000-00')
                                         ->setTipo('F')
                                         ->setGrauImportancia(4);
-                            $cliente3 = new \app\cliente\types\clientepf();
+                            $cliente3 = new \app\Cliente\Types\ClientePf();
                             $cliente3   ->setId(3)
                                         ->setLogin('magnus')
                                         ->setNome('Magnus Artuso')
@@ -70,7 +70,7 @@
                                         ->setCpf('000.000.000-00')
                                         ->setTipo('F')
                                         ->setGrauImportancia(4);
-                            $cliente4 = new \app\cliente\types\clientepf();
+                            $cliente4 = new \app\Cliente\Types\ClientePf();
                             $cliente4   ->setId(4)
                                         ->setLogin('inez')
                                         ->setNome('Inez Artuso')
@@ -79,7 +79,7 @@
                                         ->setCpf('000.000.000-00')
                                         ->setTipo('F')
                                         ->setGrauImportancia(5);
-                            $cliente5 = new \app\cliente\types\clientepf();
+                            $cliente5 = new \app\Cliente\Types\ClientePf();
                             $cliente5   ->setId(5)
                                         ->setLogin('gevaldino')
                                         ->setNome('Gevaldino Moraes')
@@ -88,7 +88,7 @@
                                         ->setCpf('000.000.000-00')
                                         ->setTipo('F')
                                         ->setGrauImportancia(5);
-                            $cliente6 = new \app\cliente\types\clientepj();
+                            $cliente6 = new \app\Cliente\Types\ClientePj();
                             $cliente6   ->setId(6)
                                         ->setLogin('fisk')
                                         ->setNome('Fisk Fronteira')
@@ -99,7 +99,7 @@
                                         ->setRazaoSocial('Fisk Fronteira e Cia Ltda')
                                         ->setEnderecoCobranca('Mesmo endereço')
                                         ->setGrauImportancia(5);
-                            $cliente7 = new \app\cliente\types\clientepj();
+                            $cliente7 = new \app\Cliente\Types\ClientePj();
                             $cliente7   ->setId(7)
                                         ->setLogin('mclee')
                                         ->setNome('McLee Editora Gráfica')
@@ -110,7 +110,7 @@
                                         ->setRazaoSocial('McLee Inc')
                                         ->setEnderecoCobranca('Rua XV de Novembro')
                                         ->setGrauImportancia(5);
-                            $cliente8 = new \app\cliente\types\clientepj();
+                            $cliente8 = new \app\Cliente\Types\ClientePj();
                             $cliente8   ->setId(8)
                                         ->setLogin('voxsis')
                                         ->setNome('Voxsis')
@@ -121,7 +121,7 @@
                                         ->setRazaoSocial('Voxsis Inc')
                                         ->setEnderecoCobranca('Mesmo endereço')
                                         ->setGrauImportancia(3);
-                            $cliente9 = new \app\cliente\types\clientepj();
+                            $cliente9 = new \app\Cliente\Types\ClientePj();
                             $cliente9   ->setId(9)
                                         ->setLogin('kepler')
                                         ->setNome('Kepler Sistemas')
@@ -132,7 +132,7 @@
                                         ->setRazaoSocial('Kepler Co.')
                                         ->setEnderecoCobranca('SMO')
                                         ->setGrauImportancia(4);
-                            $cliente10 = new \app\cliente\types\clientepj();
+                            $cliente10 = new \app\Cliente\Types\ClientePj();
                             $cliente10  ->setId(10)
                                         ->setLogin('kam')
                                         ->setNome('KAM')
