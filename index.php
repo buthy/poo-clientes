@@ -17,22 +17,14 @@ define('PUBLIC_HTML', __DIR__ . DIRECTORY_SEPARATOR);
 define('SRC_DIR', __DIR__ . DIRECTORY_SEPARATOR . 'src' . DIRECTORY_SEPARATOR);
 define('VENDOR_NAME', 'app');
 define('VENDOR_DIR', SRC_DIR . VENDOR_NAME . DIRECTORY_SEPARATOR);
+define('AUTOLOAD_FILE', SRC_DIR . 'autoload.php');
 
-define('CLASS_DIR', 'src/');
-set_include_path(get_include_path().PATH_SEPARATOR.CLASS_DIR);
-spl_autoload_register(function($name) {
-
-    if (is_readable(strtolower($name).'.php')) {
-        require_once(strtolower($name).'.php');
-    } 
-    elseif (is_readable(ucfirst($name).'.php')) {
-        require_once(ucfirst($name).'.php');
-    }
-});
 
 if (preg_match('/\.(?:png|jpg|jpeg|gif|css|js)$/', $_SERVER["REQUEST_URI"])) {
     return false;
 } else {
+    
+    require_once AUTOLOAD_FILE;
 
     $pagina = 'home.php';
     $arquivo =  PUBLIC_HTML . $pagina;
