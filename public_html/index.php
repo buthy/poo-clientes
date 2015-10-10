@@ -14,11 +14,10 @@ function url(){
 
 define('BASE_URL', url());
 define('PUBLIC_HTML', __DIR__ . DIRECTORY_SEPARATOR);
-define('SRC_DIR', __DIR__ . DIRECTORY_SEPARATOR . 'src' . DIRECTORY_SEPARATOR);
+define('SRC_DIR', __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'src' . DIRECTORY_SEPARATOR);
 define('VENDOR_NAME', 'app');
 define('VENDOR_DIR', SRC_DIR . VENDOR_NAME . DIRECTORY_SEPARATOR);
 define('AUTOLOAD_FILE', SRC_DIR . 'autoload.php');
-
 
 if (preg_match('/\.(?:png|jpg|jpeg|gif|css|js)$/', $_SERVER["REQUEST_URI"])) {
     return false;
